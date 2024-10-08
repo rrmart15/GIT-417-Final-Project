@@ -56,17 +56,62 @@ body {
     color: #FFFFFF;
 }
 
-h3 {
-    
+#slideshow {
+    padding: 0;
 }
 
-.welcome-slides {
+#slideshow h3 {
+    visibility: hidden;
+}
+
+#slideshow ::-webkit-scrollbar {
     width: 100%;
+}
+
+#slideshow ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 15px #000000;
+}
+
+#slideshow ::-webkit-scrollbar-thumb {
+    background: #FFFFFF;
+    opacity: 50%;
+    border-radius: 20px;
+}
+
+#slider {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    background-color: #FF0000;
+    padding: 5px;
+    height: 550px;
+    width: 100%;
+}
+
+.collections h3 {
+    padding-top: 25px;
+    text-align: center;
+}
+
+#categories1 {
+    padding-top: 25px;
+}
+
+#bench-caps {
+    position: left;
+    width: 400px;
+}
+
+#stoney-caps {
     position: relative;
-    margin: auto;
+    width: 400px;
+    height: 250px;
 }
 
-.welcome-slides img {
-    height: 500px;
-    width: 100%;
+#winter-beenies {
+    position: relative;
+    width: 400px;
+    height: 250px;
 }
