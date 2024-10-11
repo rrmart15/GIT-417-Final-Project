@@ -110,6 +110,56 @@ body {
     height: 250px;
 }
 
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+}
+
 #contact {
+    grid-column-start: 2;
+    grid-row-start: 1;
     text-align: center;
+}
+
+#social-media h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#social-media h4 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#social-icons {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;    
+
+}
+
+#social-icons #facebook {
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+}
+
+#social-icons #instagram {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+#social-icons #pinterest {
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+}
+
+#social-icons #etsy {
+    width: 55px;
+    height: 55px;
+    margin: 5px;
 }
