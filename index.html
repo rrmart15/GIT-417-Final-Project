@@ -9,12 +9,15 @@
         <title>Hat Cultures</title>
     </head>
 
-    <body background="C:\Users\racha\OneDrive\GIT 417\Final Project\GIT-417-Final-Project\Photos\AdobeStock_286375793.jpeg">
+    <body>
         <header>
-            <div class="menu-bar">
-                <div id="logo">
-                    <a href="#home" class="homepage-logo"><img src="C:\Users\racha\OneDrive\GIT 417\Final Project\GIT-417-Final-Project\Photos\IMG_4663.png" id="company-logo" alt="Company logo"></a>                    
-                </div>
+            <div id="header">
+                <a href="#home" class="homepage-logo"><img src="IMG_4663.png" id="company-logo" alt="Company logo"></a>                    
+                <form>
+                    <p>Search</p>
+                    <input type="text" name="search">
+                    <button id="search-btn"></button>
+                </form>
             </div> 
  
             <h1>Hat Cultures</h1>      
@@ -36,52 +39,63 @@
         <main>
             <section id="welcome">
                 <h3>Welcome</h3>
-                        <img src="C:\Users\racha\OneDrive\GIT 417\Final Project\GIT-417-Final-Project\Photos\IMG_5311.jpeg" id="beenie-girl" alt="Girl wearing beenie">
+                        <img src="IMG_5311.jpeg" id="beenie-girl" alt="Girl wearing beenie">
             </section>
 
             <div id="collection-container">
                 <section class="collections">
                     <h3>Shop Our Collections</h3>
                     <div id="categories">
-                        <img src="C:\Users\racha\OneDrive\GIT 417\Final Project\GIT-417-Final-Project\Photos\IMG_5319.JPEG" id="bench-caps" alt="2 hats sitting on a bench"><br>
-                        <img src="C:\Users\racha\OneDrive\GIT 417\Final Project\GIT-417-Final-Project\Photos\AdobeStock_579186001.jpeg" id="beenie" alt="girl in beenie and scarf"><br>
-                        <img src="C:\Users\racha\OneDrive\GIT 417\Final Project\GIT-417-Final-Project\Photos\AdobeStock_881079187.jpeg" id="trucker" alt="trucker hat in the middle of the city">
+                        <img src="IMG_5319.JPEG" id="bench-caps" alt="2 hats sitting on a bench"><br>
+                        <img src="AdobeStock_579186001.jpeg" id="beenie" alt="girl in beenie and scarf"><br>
+                        <img src="AdobeStock_881079187.jpeg" id="trucker" alt="trucker hat in the middle of the city">
+                    </div>
+                </section>
+            </div>
+        
+            <div id="contact-social">                
+                <section id="contact">
+                    <h3><strong>Contact Us</strong></h3>
+                    <h4>We Want to Hear From You!</h4>
+                    <form id="contact-form" action="#">
+                        <div id="fname">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="fname"><br>
+                        </div>
+                        <div id="lname">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="lname"><br>
+                        </div>
+                        <div id="number">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="text" id="phone-number" name="phone"><br>
+                        </div>
+                        <div id="email">
+                            <label for="email-address">Email</label>
+                            <input type="text" id="email-address" name="email"><br>
+                        </div>
+                        <div id="feedback">
+                            <label for="comments">Comments</label>
+                            <input type="text" id="comments" name="user-comments">
+                        </div>
+                    </form>
+                </section>
+
+                <section id="social">
+                    <h3><strong>Social Media</strong></h3>
+                    <h4>Follow Us On Social Media!</h4>
+                    <div id="social-icons">
+                        <img src="facebook.png" id="facebook" alt="facebook icon">
+                        <img src="instagram.png" id="instagram" alt="instagram icon">
+                        <img src="pinterest.png" id="pinterest" alt="pinterest icon">
+                        <img src="etsy.png" id="etsy" alt="etsy icon">
                     </div>
                 </section>
             </div>
         </main>
-        <section id="contact-social">
-            <section id="contact">
-                <h3><strong>Contact Us</strong></h3>
-                <h4>We Want to Hear From You!</h4>
-                <form id="contact" action="#">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="fname">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="lname"><br>
-                    <label for="phone-number">Phone Number</label>
-                    <input type="text" id="phone-number" name="phone"><br>
-                    <label for="email-address">Email</label>
-                    <input type="text" id="email-address" name="email"><br>
-                    <label for="comments">Comments</label>
-                    <input type="text" id="comments" name="user-comments">
-                </form>
-            </section>
 
-            <section id="social">
-                <h3><strong>Social Media</strong></h3>
-                <h4>Follow Us On Social Media!</h4>
-                <div id="social-icons">
-                    <img src="C:\Users\racha\OneDrive\GIT 417\Final Project\GIT-417-Final-Project\Photos\facebook.png" id="facebook" alt="facebook icon">
-                    <img src="C:\Users\racha\OneDrive\GIT 417\Final Project\GIT-417-Final-Project\Photos\instagram.png" id="instagram" alt="instagram icon">
-                    <img src="C:\Users\racha\OneDrive\GIT 417\Final Project\GIT-417-Final-Project\Photos\pinterest.png" id="pinterest" alt="pinterest icon">
-                    <img src="C:\Users\racha\OneDrive\GIT 417\Final Project\GIT-417-Final-Project\Photos\etsy.png" id="etsy" alt="etsy icon">
-                </div>
-            </section>
-        </section>
+        <footer>
+            <p><small>&copy; Hat Cultures, LLC. 2024. All Rights Reserved.</small></p>
+        </footer>
     </body>
-
-    <footer>
-        Copyright 2024 ...
-    </footer>
 </html> 

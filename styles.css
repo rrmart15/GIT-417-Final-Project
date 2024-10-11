@@ -8,7 +8,43 @@ html {
     font-family:Arial, Helvetica, sans-serif;
     width: 1280px;
     margin: 5%;
- 
+}
+
+body {
+    background-image: url("AdobeStock_286375793.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+#header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    grid-template-rows: 150px;
+}
+
+#company-logo {
+    width: 150px;
+    height: 150px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#header form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#header p {
+    text-align: center;
+}
+
+#header input {
+    width: 600px;
+    height: 40px
 }
 
 h1,h2,#welcome h3 {
@@ -18,11 +54,6 @@ h1,h2,#welcome h3 {
 nav {
     margin: 0;
     padding: 0; 
-}
-
-#company-logo {
-    width: 150px;
-    height: 150px;
 }
 
 nav ul {    
@@ -50,13 +81,6 @@ nav a {
     font-weight: bold;
 }
 
-body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #FFFFFF;
-}
-
 #welcome {
     padding: 0;
     margin: 0;
@@ -78,12 +102,12 @@ body {
 #categories {
     padding-top: 25px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(3, min-content);
+    grid-template-rows: repeat(3, min-content);
 }
 
 #categories img {
-    width: 500px;
+    width: 400px;
     height: 300px;
 }
 
@@ -114,25 +138,96 @@ body {
     width: 100%;
     grid-template-columns: 40% 60%;
     grid-template-rows: repeat(1, 1fr);
+}
 
+#contact h3, #social h3 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 100%;
 }
 
 #contact {
-    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(1, min-content);
+    grid-template-rows: repeat(3, min-content);
     grid-column-start: 2;
     grid-row-start: 1;
+    width: 100%;
+    justify-content: center;
+}
+
+#contact h3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-content: center;
+    justify-content: center;
     text-align: center;
+}
+
+#contact h4 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contact-form {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-content: left;
+    font-size: 25px;
+}
+
+#fname, #lname {
+    padding-bottom: 20px; 
+}
+
+#fname input, #lname input {
+    height: 30px;
+    width: 500px; 
+}
+
+#number {
+    padding-bottom: 20px;
+}
+
+#number input {
+    height: 30px;
+    width: 500px; 
+}
+
+#email {
+    padding-bottom: 20px;
+}
+
+#email input {
+    height: 30px;
+    width: 500px; 
+}
+
+#feedback {
+    padding-bottom: 20px;
+    height: 200px;
+    width: 500px;
+}
+
+#feedback input {
+    height: 150px;
+    width: 500px; 
 }
 
 #social {
     text-align: center;
-    
-}
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: min-content;
+    align-content: center;
+    justify-content: center;
 
-#contact h3, #social h3 {
-    font-size: 30px;
-    text-align: center;
-    padding-bottom: 10px;
+    
 }
 
 #social-media h4 {
@@ -140,10 +235,8 @@ body {
 
 }
 
-#social-icons {
-    display: inline-flex;
-    flex-direction: row;    
-    padding-top: 20px;
+#social-icons {  
+    margin-top: 20px;
 }
 
 #social-icons #facebook, #social-icons #pinterest, #social-icons #etsy  {
@@ -159,5 +252,7 @@ body {
 }
 
 footer {
+    width: 100%;
+    padding-top: 20px;
     text-align: center;
 }
