@@ -6,11 +6,10 @@
 
 html {
     font-family:Arial, Helvetica, sans-serif;
-    max-width: 1280px;
+    width: 1280px;
     margin: 5%;
  
 }
-
 
 h1,h2,#welcome h3 {
     display: none;
@@ -112,18 +111,25 @@ body {
 
 #contact-social {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: repeat(1, 1fr);
 
 }
 
 #contact {
+    width: 70%;
     grid-column-start: 2;
     grid-row-start: 1;
     text-align: center;
 }
 
-#contact h3, #social-media h3 {
+#social {
+    text-align: center;
+    
+}
+
+#contact h3, #social h3 {
     font-size: 30px;
     text-align: center;
     padding-bottom: 10px;
@@ -131,38 +137,25 @@ body {
 
 #social-media h4 {
     text-align: center;
-    padding-bottom: 10px;
+
 }
 
 #social-icons {
-    position: relative;
     display: inline-flex;
     flex-direction: row;    
-
+    padding-top: 20px;
 }
 
-#social-icons #facebook {
+#social-icons #facebook, #social-icons #pinterest, #social-icons #etsy  {
     width: 55px;
     height: 55px;
-    margin: 5px;
+    margin: 15px;
 }
 
 #social-icons #instagram {
     width: 60px;
     height: 60px;
-    margin: 5px;
-}
-
-#social-icons #pinterest {
-    width: 55px;
-    height: 55px;
-    margin: 5px;
-}
-
-#social-icons #etsy {
-    width: 55px;
-    height: 55px;
-    margin: 5px;
+    margin: 15px;
 }
 
 footer {
