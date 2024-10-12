@@ -113,6 +113,7 @@ nav a {
     text-transform: uppercase;
     color: #FFFFFF;
     font-weight: bold;
+    font-size: 20px;
 }
 
 #welcome {
@@ -144,8 +145,85 @@ nav a {
     padding: 5px;
 }
 
-.collections h3 {
-    padding-top: 25px;
+#about {
+    margin: 75px;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: 15% 85%;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+#about h3 {
+    font-size: 50px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-content: center;
+    align-content: center;
+}
+
+#about p {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-content: center;
+    align-content: center;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+#colors {
+    padding-top: 30px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(2, min-content);
+    justify-content: center;
+    align-content: center;
+}
+
+#colors img {
+    width: 200px;
+    height: 200px;
+}
+
+#yellow {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#fuscia {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: center;
+    align-content: center;
+}
+
+#purple {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-content: center;
+    align-content: center;
+}
+
+
+#collections h3 {
+    font-size: 50px;
+    padding-top: 15px;
     text-align: center;
 }
 
