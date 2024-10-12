@@ -272,10 +272,16 @@ nav a {
     transition: 1s ease;
 }
 
-#collections h3 {
+#collections h3:first-of-type {
+    font-size: 50px;
+    padding-top: 15px;
+}
+
+#summary h3 {
     font-size: 50px;
     padding-top: 15px;
     text-align: center;
+    
 }
 
 #categories {
@@ -283,12 +289,10 @@ nav a {
     grid-column-end: 2;
     padding-top: 25px;
     display: grid;
-    grid-template-columns: repeat(3, min-content);
+    grid-template-columns: 300px 300px 300px 300px;
     grid-template-rows: repeat(3, min-content);
     padding-bottom: 70px;
-    width: 100%;
-    justify-content: center;
-    align-content: center;
+    width: 70%;
 }
 
 #categories img {
@@ -366,11 +370,41 @@ nav a {
     padding-left: 10px;
 }
 
-#guessing-game {
-    background-color: var(--white);
-	padding: 1rem;
-	width: calc(100% - 2rem);
-	max-width: 1280px;
+#summary {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#summary h3{
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid var(--med-gray);
+}
+
+#summary ul{
+	width: fit-content;
+	margin: 0 auto;
+	font-size: 1.2rem;
+    list-style: none;
+}
+
+#summary li{
+	margin: 0.5rem 0;
+    list-style: none;
+}
+
+#cart-items li{
+	padding-bottom: 0.25rem;
+	border-bottom: 1px solid var(--med-gray);
+    list-style: none;
+}
+
+#checkout {
+	font-size: 20px;
+    padding: 5px;
+	margin-left: 100px;
+    border-radius: 12px;
 }
 
 #contact-social {
