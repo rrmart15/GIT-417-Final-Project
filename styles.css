@@ -220,6 +220,30 @@ nav a {
     align-content: center;
 }
 
+#celebrities {
+    width: 100%;
+    overflow: hidden;
+    width: 500px;
+    height: 700px;
+}
+
+#celebrities h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.slide {
+    float: left;
+    width: 500px;
+    height: 700px;
+
+}
+
+#slideshow {
+    width: calc(700px * 4);
+    animation: slide 10s ease infinite
+}
+
 
 #collections h3 {
     font-size: 50px;
