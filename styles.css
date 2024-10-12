@@ -10,10 +10,6 @@ html {
     margin: 5%;
 }
 
-[data-theme"light-mode"] {
-
-}
-
 body {
     background-image: url("AdobeStock_286375793.jpeg");
     background-repeat: no-repeat;
