@@ -173,6 +173,7 @@ nav a {
     grid-column-end: 2;
     justify-content: center;
     align-content: center;
+    font-size: 17px;
     font-weight: bold;
     line-height: 30px;
 }
@@ -220,54 +221,6 @@ nav a {
     align-content: center;
 }
 
-#slideshow-container { 
-    width: 1280;
-    height: 500px;
-    position: relative;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1;
-    grid-template-rows: 2;
-    align-content: center;
-    justify-content: center;
-}
-
-#slideshow-container h3 {
-    font-size: 50px;
-    text-align: center;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-#slideshow { 
-    grid-row-start: 2;
-    grid-row-end: 3;
-    float: left;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-.slides {
-    height: 200px;
-    width: 200px;
-    overflow: hidden;
-}
-
-#slideshow img {
-    height: 200px;
-    width: 200px;
-}
-
-#left-btn, #right-btn {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    transition: 1s ease;
-}
-
 #collections h3:first-of-type {
     font-size: 50px;
     padding-top: 15px;
@@ -277,7 +230,6 @@ nav a {
     font-size: 50px;
     padding-top: 15px;
     text-align: center;
-    
 }
 
 #categories {
@@ -351,7 +303,7 @@ nav a {
 }
 
 .product-info :nth-child(4) {
-    font-size: 50;
+    font-size: 20px;
     font-weight: bolder;
     text-align: center;
     padding: 5px;

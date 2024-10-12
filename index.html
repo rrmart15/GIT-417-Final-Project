@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light-mode">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <script src="action.js"></script>
+        <script src="action.js" defer></script>
         <title>Hat Cultures</title>
     </head>
 
@@ -17,13 +17,13 @@
                 <label for="search">Search</label>
                 <div id="search-bar">
                     <input type="text" id="search" name="search-field">
-                    <button type="submit" id="search-btn"><img src="searching.png"></button>
+                    <button type="submit" id="search-btn"><img src="searching.png" alt="search symbol icon"></button>
                 </div>
             </form>
             <div id="menu">
                 <a href="#favorites" class="favorite-logo"><img src="favorite-light.png" id="star-logo" alt="Round star logo"></a>
                 <a href="#profile" class="profile-logo"><img src="account-light.png" id="account-logo" alt="Round person logo"></a>
-                <a href="#call" class="phone-logo"><img src="phone-call-light.png" id="star-logo" alt="Round phone logo"></a>
+                <a href="#call" class="phone-logo"><img src="phone-call-light.png" id="phone-logo" alt="Round phone logo"></a>
                 <a href="#mode" class="mode-logo"><img src="light-mode.png" id="bright-logo" alt="Round star logo"></a>  
             </div>
         </header>
@@ -130,6 +130,7 @@
                                 <p>Add to Cart</p>
                             </div>
                         </div>
+                    
                         <section id="summary">
                             <h3>Cart</h3>
                             <ul id="cart-items">
@@ -141,8 +142,9 @@
                                 <li id="shipping">Shipping: <span>$0.00</span></li>
                                 <li id="total">Cart Total: <span>$0.00</span></li>
                             </ul>
-                            <button id="checkout">Checkout</button>
+                            <button type="submit" id="checkout">Checkout</button>
                         </section>
+                    </div>
                 </section>
             </div>
 
@@ -174,14 +176,14 @@
                         <div id="options">
                             <div id="radio-phone">
                                 <input type="radio" id="phone-option" name="phone-option" required>
-                                <label for="phone-option" action="#">Phone</label>
+                                <label for="phone-option">Phone</label>
                             </div>
                             <div id="radio-email">
                                 <input type="radio" id="email-option" name="email-option" required>
-                                <label for="email-option" action="#">Email</label>
+                                <label for="email-option">Email</label>
                             </div>
                         </div>
-                        <button type="submit" class="submit" href="#">Submit</button>
+                        <button type="submit" class="submit">Submit</button>
                     </form>
                 </section>
 
